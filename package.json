@@ -1,0 +1,16 @@
+{
+  "name": "cpu-bound-application",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cpu-test": "artillery run --output ./artillery/output/report.json ./artillery/scripts/cpu-test.yml",
+    "cpu-test-report": "artillery report ./artillery/output/report.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/luke0408/cput-bound-application.git"
+  },
+  "private": true
+}
