@@ -1,13 +1,14 @@
 config:
   # This is a test server run by team Artillery
   # It's designed to be highly scalable
-  target: http://${TEST_HOST}/
+  target: "http://${TEST_HOST}"
   phases:
     - duration: 60    # 60 seconds
       arrivalRate: 1  # virtual user number
       name: Warm up phase
 scenarios:
   - flow:
+      - log: "Starting test for target to: {{ $config.target }}"
       - loop:
         - get:
             url: "/hash/123"
