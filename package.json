@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cpu-test": "artillery run --output ./artillery/output/report.json ./artillery/scripts/cpu-test.yml",
-    "cpu-test-report": "artillery report ./artillery/output/report.json"
+    "cpu-test": "artillery run --output artillery/output/report.json ./artillery/scripts/cpu-test.yml",
+    "cpu-test-report": "artillery report artillery/output/report.json"
   },
   "repository": {
     "type": "git",
